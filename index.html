@@ -30,6 +30,8 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">content</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">story</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">추가 정보</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -95,115 +97,208 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about"
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">story</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">1.어원·이름 관련<br> 
--추석(秋夕): 가을(秋) 저녁(夕)이라는 뜻.<br>
--한가위: ‘가운데(한)’ + ‘가윗날(가위)’ → 음력 8월의 한가운데 큰 날.
-
-<br><br>2.속담 관련<br>
--"한가위 대보름 달 같다" → 얼굴이 둥글고 밝다는 칭찬.<br>
--"더도 말고 덜도 말고 한가위만 같아라" → 추석을 가장 풍요로운 시절로 여겨, 늘 넉넉하고 풍성하길 바란다는 뜻.
-</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">3.음식 관련<br> 
--송편 모양: 반달 모양인 이유 → "앞으로 차오르는 달처럼 발전하라"는 기원.<br>
--송편 속재료 지역별 차이:
-    * 남부: 깨, 꿀
-    * 중부: 팥
-    * 강원도: 콩 <br><br>4.역사 관련 <br>
-삼국사기에 따르면, 신라 유리왕 때 ‘가배(嘉俳)’라는 놀이가 있었는데, 이것이 추석의 기원으로 알려졌다.<br>
--조선 시대에는 추석이 국가적 제사일이자 민속 축제로 확립됐다.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+       <section class="page-section mb-0" id="about" style="background-color: #E6A67E;">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">story</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <div class="story-card" data-bs-toggle="modal" data-bs-target="#storyModal1">
+                    <h3>📖 어원</h3>
                 </div>
             </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <div class="col-lg-6 mb-4">
+                <div class="story-card" data-bs-toggle="modal" data-bs-target="#storyModal2">
+                    <h3>💬 속담</h3>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="story-card" data-bs-toggle="modal" data-bs-target="#storyModal3">
+                    <h3>🍙 음식</h3>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="story-card" data-bs-toggle="modal" data-bs-target="#storyModal4">
+                    <h3>📜 역사</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                <i class="fas fa-download me-2"></i>
+                Free Download!
+            </a>
+        </div>
+    </div>
+</section>
+<div class="portfolio-modal modal fade" id="storyModal1" tabindex="-1" aria-labelledby="storyModal1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">어원</h2>
+                            <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>
+                            <p class="mb-4" style="text-align: left; font-size: 1.25rem;">
+                                - 추석(秋夕):가을(秋) 저녁(夕)이라는 뜻으로, 가을 달빛이 가장 좋은 밤이라는 의미를 담고 있습니다.<br><br>
+                                - 한가위 : ‘가운데(한)’와 ‘가윗날(가위)’의 합성어로, 음력 8월의 한가운데에 있는 큰 날이라는 뜻입니다.
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close Window</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="storyModal2" tabindex="-1" aria-labelledby="storyModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">속담</h2>
+                            <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>
+                            <p class="mb-4" style="text-align: left; font-size: 1.25rem;">
+                                - "한가위 대보름 달 같다" → 얼굴이 둥글고 밝아 보기 좋다는 칭찬의 의미입니다.<br><br>
+                                - "더도 말고 덜도 말고 한가위만 같아라" → 추석을 가장 풍요로운 시절로 여겨, 늘 넉넉하고 풍성하길 바란다는 뜻입니다.
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="storyModal3" tabindex="-1" aria-labelledby="storyModal3" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">음식</h2>
+                            <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>
+                            <p class="mb-4" style="text-align: left; font-size: 1.25rem;">
+                                - 송편 모양 : 반달 모양인 이유는 "앞으로 차오르는 달처럼 발전하라"는 기원을 담고 있습니다.<br><br>
+                                - 송편 속재료 지역별 차이:<br>
+                                &nbsp;&nbsp;* 남부: 깨, 꿀<br>
+                                &nbsp;&nbsp;* 중부: 팥<br>
+                                &nbsp;&nbsp;* 강원도: 콩
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="storyModal4" tabindex="-1" aria-labelledby="storyModal4" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">역사</h2>
+                            <div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"><i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>
+                            <p class="mb-4" style="text-align: left; font-size: 1.25rem;">
+                                - 삼국사기에 따르면, 신라 유리왕 때 ‘가배(嘉俳)’라는 놀이가 있었는데, 이것이 추석의 기원으로 알려졌습니다.<br><br>
+                                - 조선 시대에는 추석이 국가적 제사일이자 민속 축제로 확립됐습니다.
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- About Section Button-->
+               <div class="text-center mt-4">
+    <a class="btn btn-xl btn-outline-light" href="https://www.youtube.com/watch?v=XNesAWl2eSg" target="_blank">
+        <i class="fab fa-youtube me-2"></i>
+        추석 관련 영상 보기
+    </a>
+</div>
+            </div>
         </section>
+        <!-- Contact Section-->
+     <section class="page-section" id="contact" style="background-color:#FFF3E0;">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">여러분의 추석 이야기를 들려주세요</h2>
+        
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">이름</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">이메일 주소</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">연락처</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group input-group-lg mb-3">
+                         <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">이야기 / 덕담</label>
+                        </div>
+                    </div>
+                   
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3"><div class="fw-bolder">메시지가 성공적으로 전송되었습니다!</div></div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">메시지 전송에 실패했습니다.</div></div>
+                    
+                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">이야기 보내기</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -463,3 +558,37 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+
+<div class="portfolio-modal modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">추가 정보</h2>
+                            
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            
+                            <p class="mb-4" style="text-align: left; font-size: 1.25rem;">
+                                안녕하세요. 이건 추석 소개글입니다<br><br>
+                                냐하.
+                            </p>
+                            
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                창 닫기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
