@@ -11103,17 +11103,13 @@ body {
   font-weight: 700;
   margin: 0;
 }
+/
 header.masthead {
-    background-color: #0c1445 !important;
-    background-image: 
-        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background: transparent;
     position: relative;
     overflow: hidden;
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
 }
 
 header.masthead .divider-custom .divider-custom-icon i {
@@ -11122,4 +11118,96 @@ header.masthead .divider-custom .divider-custom-icon i {
 
 header.masthead .divider-custom .divider-custom-line {
     background-color: #ffffff;
+}
+/* 전체 배경 - 밤하늘 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c1445;
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,0.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,0.1) 2px, transparent 40px),
+        radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* 별 반짝임 레이어 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(white, transparent 70%) repeat;
+    background-size: 200px 200px;
+    animation: twinkle 6s infinite ease-in-out;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* 반짝임 애니메이션 */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.02); }
+}
+
+/* header 기존 스타일 유지 */
+header.masthead {
+    background: transparent;
+}
+
+header.masthead .divider-custom .divider-custom-icon i {
+    color: #ffffff;
+}
+
+header.masthead .divider-custom .divider-custom-line {
+    background-color: #ffffff;
+}
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+  color: white;
+}
+
+.masthead {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.masthead::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  z-index: -1;
+}
+
+/* 별 효과 */
+@keyframes twinkle {
+  from { opacity: 0.2; }
+  50% { opacity: 1; }
+  to { opacity: 0.2; }
+}
+
+.star {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
 }
