@@ -16,7 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
@@ -238,50 +238,49 @@
             </div>
         </section>
         <!-- Contact Section-->
-     <section class="page-section mb-0" id="about" style="background-color: transparent;">
-    <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">여러분의 추석 이야기를 들려주세요</h2>
-        
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-7">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    
-                   <div class="input-group input-group-lg mb-3">
-    <span class="input-group-text"><i class="fas fa-user"></i></span>
-    <div class="form-floating flex-grow-1">
-        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-        <label for="name">이름</label>
-    </div>
-</div>
-
-<div class="input-group input-group-lg mb-3">
-    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-    <div class="form-floating flex-grow-1">
-        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-        <label for="email">이메일 주소</label>
-    </div>
-</div>
-
-<div class="input-group input-group-lg mb-3">
-     <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
-    <div class="form-floating flex-grow-1">
-        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-        <label for="message">이야기 / 덕담</label>
-    </div>
-</div>
-                   
+      </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">여러분의 추석 이야기를 들려주세요</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form action="https://formspree.io/f/xwpryolj" method="POST">
+                            <div class="input-group input-group-lg mb-3">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <div class="form-floating flex-grow-1">
+                                    <input class="form-control" id="name" type="text" name="이름" placeholder="Enter your name..." required />
+                                    <label for="name">이름</label>
+                                </div>
+                            </div>
+                            <div class="input-group input-group-lg mb-3">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <div class="form-floating flex-grow-1">
+                                    <input class="form-control" id="email" type="email" name="이메일" placeholder="name@example.com" required />
+                                    <label for="email">이메일 주소</label>
+                                </div>
+                            </div>
+                            <div class="input-group input-group-lg mb-3">
+                                <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+                                <div class="form-floating flex-grow-1">
+                                    <textarea class="form-control" id="message" name="이야기" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                    <label for="message">이야기 / 덕담</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-xl" type="submit">이야기 보내기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 <div class="d-none" id="submitSuccessMessage">
     <div class="text-center mb-3"><div class="fw-bolder">메시지가 성공적으로 전송되었습니다!</div></div>
 </div>
 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">메시지 전송에 실패했습니다.</div></div>
-                    
-<button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">이야기 보내기</button>
     </div>
 </section>
         <!-- Footer-->
